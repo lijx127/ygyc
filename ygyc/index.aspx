@@ -12,7 +12,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>910教室</title>
+    <title>910教室_专业教师培训活动网_教师培训查询报名平台</title>
+    <meta name="keywords" content="910教室,910class,教师培训,教师培训平台,校长论坛,活动查询,会议查询,云谷云创">
+    <meta name="description" content="教师培训，上910教室！910教室——专注教师培训课程展示的专业网络服务平台，整合全国优秀培训机构，给教育工作者展示优秀培训项目，为全国中小幼教师的专业发展提供开阔的视野及更多的选择，谋求在教师教育、未来教育、国际教育、学校服务等领域长足发展！">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/nivo-slider.css">
 
