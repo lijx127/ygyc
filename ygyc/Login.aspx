@@ -71,8 +71,8 @@
                 <input id="btnSubmit" name="btnSubmit" class="btn btn-primary" type="submit" value="登 录">
                 <div id="msgtips"></div>
                 <a class="weixin-a" href="#" style="float: left; padding-top: 10px">
-                    <img align="absmiddle" src="images/weixin.png">
-                    微信账号直接登录</a>
+                    <!--<img align="absmiddle" src="images/weixin.png">
+                    微信账号直接登录--></a>
             </div>
             <div class="clear div-login-2">
                 <h2>用户注册</h2>
