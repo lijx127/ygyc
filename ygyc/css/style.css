@@ -1,0 +1,69 @@
+body{ margin:0;}
+
+
+#slider {
+	position: absolute;
+	 width:100%;
+    height:600px;
+	top:0px;
+	z-index:-999
+	
+}
+#slider img {
+
+	display:none;
+	height:600px;
+	width:100%;
+	z-index:-999
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+    left: 49%;
+	bottom:22px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(../images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+	z-index:999
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:70px;
+	height:70px;
+	background:url(../images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	z-index:999
+}
+a.nivo-nextNav {
+    background-position:-75px -190px;
+	right:15px;
+}
+a.nivo-prevNav {
+	background-position:-190px 0px ;
+	left:15px;
+}
+
+a.nivo-nextNav:hover {
+    background-position:0px -190px;
+	right:15px;
+}
+a.nivo-prevNav:hover {
+	background-position:-190px -75px ;
+	left:15px;
+}

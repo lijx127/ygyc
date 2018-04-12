@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  />
+		<title>jQuery&#22270;&#29255;&#36718;&#25773;&#24187;&#28783;&#29255; - &#31449;&#38271;&#32032;&#26448;</title>
+		 
+		
+ 
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/nivo-slider.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <style type="text/css">
+        /* float-news */
+        .float-news {
+            background: #fbfbfb;
+            border: 2px solid #e1e1e1;
+            border-left: 0 none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .float-news {
+            height: 180px;
+            left: 0px;
+            padding: 10px 15px;
+            width: 100%;
+            z-index: 100;
+            bottom: 0px;
+            _margin-top: 117px;
+        }
+
+        .float-open {
+            height: 125px;
+            left: -125px;
+            padding: 4px 4px 4px 6px;
+            width: 125px;
+            z-index: 99;
+            bottom: 47px;
+            _margin-top: 206px;
+            background: url(images/nav-close.png) no-repeat
+        }
+
+        .float-news, .float-open {
+            position: fixed;
+            *zoom: 1;
+            _position: absolute;
+            _top: expression(eval(document.documentElement.scrollTop));
+        }
+
+        .float-close {
+            background: url(images/nav-close.png) no-repeat left top;
+            overflow: hidden;
+            height: 48px;
+            opacity: .6;
+            filter: alpha(opacity=100);
+            position: absolute;
+            right: 190px;
+            text-indent: 100%;
+            top: 20px;
+            white-space: nowrap;
+            width: 48px;
+        }
+
+        .open-btn {
+            background: url(images/ml-open-demo.png) no-repeat left top;
+            display: block;
+            overflow: hidden;
+            height: 125px;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            text-indent: 100%;
+            white-space: nowrap;
+            width: 125px;
+        }
+
+            .float-close:hover, .open-btn:hover {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+        .float-news {
+            background: #051223;
+            opacity: .8;
+            border: 0;
+            overflow: visible;
+            height: 140px
+        }
+
+        .tiles-nav a {
+            float: left;
+        }
+			#carousel {
+				width: 1200px;
+				position:relative;
+			}
+			#carousel ul {
+				list-style: none;
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+			#carousel li {
+				
+				font-size: 40px;
+				color: #999;
+				text-align: center;
+				display: block;
+				width: 150px;
+				height:56px;
+				padding: 0;
+				margin: 5px;
+				float: left;
+				position: relative;
+				padding:2px;
+				border:1px #ddd solid
+			}
+
+			#carousel li img {
+				width: 150px;
+				height: 56px;
+			}
+			
+    </style>
+    <link rel="stylesheet" href="ImgSpider/css/jquery.tiles.min.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="ImgSpider/js/jquery.tiles.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            var defaults = {
+                thumbSize: 20,
+                onSlideshowEnd: function () {
+                    $('.stop, .start').toggle()
+                }
+            };
+            var effects = {
+                'default': { x: 6, y: 4, random: true },
+                simple: { x: 6, y: 4, effect: 'simple', random: true },
+                left: { x: 1, y: 8, effect: 'left' },
+                up: { x: 20, y: 1, effect: 'up', rewind: 60, backReverse: true },
+                leftright: { x: 1, y: 8, effect: 'leftright' },
+                updown: { x: 20, y: 1, effect: 'updown', cssSpeed: 500, backReverse: true },
+                switchlr: { x: 20, y: 1, effect: 'switchlr', backReverse: true },
+                switchud: { x: 1, y: 8, effect: 'switchud' },
+                fliplr: { x: 20, y: 1, effect: 'fliplr', backReverse: true },
+                flipud: { x: 20, y: 3, effect: 'flipud', reverse: true, rewind: 75 },
+                reduce: { x: 6, y: 4, effect: 'reduce' },
+                360: { x: 1, y: 1, effect: '360', fade: true, cssSpeed: 600 }
+            };
+            $('#slider').tilesSlider($.extend({}, defaults, effects['reduce']));
+            $('#slider').tilesSlider('start');
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // 更多新闻
+            function ml_close_demo() {
+                $('.float-news').animate({
+                    left: '-105%'
+                }, 300, function () {
+                    $('.float-open').delay(50).animate({
+                        left: '-8px'
+                    }, 300);
+                });
+            }
+            function ml_open_demo() {
+                $('.float-open').animate({
+                    left: '-130px'
+                }, 100, function () {
+                    $('.float-news').delay(50).animate({
+                        left: '0px'
+                    }, 500);
+                });
+            }
+
+            $('.float-close').click(function () {
+                ml_close_demo();
+                return false;
+            });
+            $('.open-btn').click(function () {
+                ml_open_demo();
+                return false;
+            });
+
+            setTimeout(function () {
+                ml_close_demo()
+            }, 1000);
+
+        });
+    </script>
+    <link rel="stylesheet" href="css/jquery.bigautocomplete.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.bigautocomplete.js"></script>
+    <%
+        string chooseCity = "";
+        string city = "";
+        try
+        {
+            city = DTcms.Web.PublicStatic.HttpGet("http://ip.taobao.com/service/getIpInfo.php?ip=" + DTcms.Web.PublicStatic.GetIP());
+            city = DTcms.Web.PublicStatic.Unicode2String(city);
+        }
+        catch { }
+        if (city.Contains("\"city\":\""))
+        {
+            city = city.Substring(city.IndexOf("\"city\":\"") + "\"city\":\"".Length).Split('"')[0];
+        }
+        else
+        {
+            city = "";
+        }
+    %>
+    <%DTcms.BLL.article_category bllArticleCategory = new DTcms.BLL.article_category(); %>
+    <%
+        System.Data.DataTable dtArticleCategory = bllArticleCategory.GetCitys();
+        string cityData = "";
+        foreach (System.Data.DataRow dr in dtArticleCategory.Rows)
+        {
+            if (dr["title"].ToString().Replace("市", "").Equals(city.Replace("市", "")))
+            {
+                chooseCity = dr["Id"].ToString();
+                city = dr["title"].ToString();
+            }
+            cityData += "," + "{ title: \"" + dr["title"] + "\", result: { ff: \"" + dr["Id"] + "\" } }";
+        }
+        cityData = cityData.Trim(',');
+        if (chooseCity == "")
+        {
+            city = "";
+        }
+    %>
+    <link rel="stylesheet" href="date/css/asDatepicker.css">
+
+    <script src="date/src/jquery-asDatepicker.js"></script>
+    <script src="date/demo/js/language.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#calendar").asDatepicker({
+                mode: 'range', namespace: 'calendar',
+                lang: 'zh',
+                position: 'bottom'
+            });
+            $("#calendar").val("");
+        });
+    </script>
+    <script type="text/javascript">
+        var ChooseCity = "";
+        var dataArry = [<%=cityData%>];
+        $(function () {
+            $("#city").bigAutocomplete({
+                width: 210, data: dataArry, callback: function (data) {
+                    ChooseCity = data.result.ff;
+                }
+            });
+            $("#city").val("<%=city%>");
+            $("#search").click(function () {
+                var date = $("#calendar").val().replace("/", "-").replace("/", "-").replace("/", "-").replace("/", "-").replace("/", "-").replace("/", "-").replace("/", "-").replace("至", "_").replace(" ", "").replace(" ", "");
+                var url = "product.aspx?channel=goods&datecount=" + $("#days").val().replace("天", "").replace("不限", "") + "&date=" + date + "&city=" + ChooseCity + "&key=" + encodeURI($("#ssKey").val());
+                location.href = url;
+            });
+        })
+        ChooseCity = "<%=chooseCity%>";
+    </script>
+	<script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$('#carousel ul').carouFredSel({
+				
+					scroll: 1000
+				});
+	
+			});
+		</script>
+	
+	</head>
+	<body>
+
+			<div id="carousel">
+				<ul>
+					<li><img src="images/up1.jpg" alt="" /></li>
+					<li><img src="images/up2.jpg" alt="" /></li>
+					<li><img src="images/up3.jpg" alt="" /></li>
+					<li><img src="images/up4.jpg" alt="" /></li>
+					<li><img src="images/up5.jpg" alt="" /></li>
+					<li><img src="images/up6.jpg" alt="" /></li>	
+					<li><img src="images/up4.jpg" alt="" /></li>
+					<li><img src="images/up5.jpg" alt="" /></li>
+					<li><img src="images/up6.jpg" alt="" /></li>
+					<li><img src="images/up1.jpg" alt="" /></li>
+					<li><img src="images/up2.jpg" alt="" /></li>
+					<li><img src="images/up3.jpg" alt="" /></li>
+					<li><img src="images/up2.jpg" alt="" /></li>
+					<li><img src="images/up3.jpg" alt="" /></li>
+					<li><img src="images/up2.jpg" alt="" /></li>
+					<li><img src="images/up3.jpg" alt="" /></li>					
+				</ul>
+			
+		</div>
+
+	</body>
+</html>

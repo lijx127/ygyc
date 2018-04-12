@@ -1,0 +1,52 @@
+.banner{ width:100%; height:600px;  position:relative; z-index:0}
+.header{ width:100%; background-color:rgba(0,0,0,0.5); height:65px; z-index:999}
+.header-logo{ padding:8px 20px 0px 70px; float:left;}
+.header-menu{ padding:0px 20px 0px 40px; float:left;margin-left:20px}
+.header-menu a{ display:block; color:#FFFFFF; text-decoration:none; float:left;  height:65px; line-height:65px; padding:0 20px; font-size:15px; font-weight:bold; letter-spacing:1px; margin-right:10px}
+.header-check{ background:#fd8238}
+.header-menu a:hover{ border-bottom:3px #fd8238 solid; height:62px}
+.header-menu .header-check-1{ border-bottom:3px #fd8238 solid; height:62px}
+.header-login{ float:right; padding:20px 40px 0 0}
+.header-login a{ color:#FFFFFF; text-decoration:none; font-size:14px; margin:0 3px}
+.header-login a:hover{ text-decoration:underline}
+.index-content-1{ width:1200px; margin:20px auto}
+.index-content-1 h1{ text-align:center; font-weight:normal; padding-top:20px}
+.index-content-1 ul{ margin:0; padding:0; margin-left:-20px; padding-bottom:30px}
+.index-content-1 ul a{ font-size:14px; color:#FFFFFF; text-decoration:none}
+.index-content-1 ul li{ float:left; margin-left:30px}
+.index-content-1 ul li p{ background:#ff6666; margin:0; padding:10px 20px; line-height:30px; letter-spacing:1px; margin-top:-5px;width: 330px;overflow: hidden;
+height: 60px; letter-spacing:2px}
+.index-content-1 ul li p:hover{ background:#fb4d4d}
+.index-content-1 ul li p span{ font-size:18px; font-weight:}
+.index-content-1 ul li .p-yellow{ background:#404a54}
+.index-content-1 ul li .p-blue{ background:#297edd}
+.index-content-1 ul li .p-yellow:hover{ background:#404a54}
+.index-content-1 ul li .p-blue:hover{ background:#297edd}
+.index-content-2{ width:1200px; margin:20px auto; margin-top:40px}
+.index-content-2 h1{ text-align:center; font-weight:normal; padding-top:0px}
+.index-content-2 ul{ margin:0; padding:0; margin-left:-20px; padding-bottom:30px; height:250px;overflow: hidden;margin-bottom: 40px}
+.index-content-2 ul a{ font-size:16px; color:#333; text-decoration:none}
+.index-content-2 ul li{ float:left; margin-left:20px}
+.index-content-2 ul li img{width:280px; height:240px}
+.index-content-2 ul li p{  margin:0; padding:10px 0px; line-height:30px; letter-spacing:1px; margin-top:-5px; text-align:center; width:280px}
+.index-content-3{ width:1200px; margin:20px auto; margin-top:40px; }
+.index-content-3 h1{ text-align:left; font-weight:normal; padding-top:10px; font-size:18px}
+.index-content-4{ width:1200px; margin:20px auto; margin-top:20px;line-height:32px}
+.index-content-4 h1{ text-align:left; font-weight:normal; padding-top:10px; font-size:18px}
+.index-content-4 a{font-size:13px;text-decoration:none; margin:0 12px;color:#333;letter-spacing:1px}
+.index-content-4 a:hover{text-decoration:underline;}
+.foorer{ border-top:1px #ddd solid; color:#ffffff; text-align:center; font-size:12px; background:#404040; letter-spacing:1px; padding:20px 0; line-height:30px}
+.index-search{ position:absolute; bottom:100px; width:1095px;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+.index-search .input-1{ padding:0px 20px; background:#ffffff; color:#999999; font-size:16px; width:250px; border:0; height:55px; line-height:55px; letter-spacing:1px}
+.index-search .input-2{ padding:0px 20px; background:#ffffff; color:#999999; font-size:16px; width:150px; border:0; height:55px; line-height:55px; letter-spacing:1px; background:url(../images/com-search.png)10px 15px no-repeat; background-color:#FFFFFF ; padding-left:40px; border-right:1px #ddd solid}
+.index-search .input-3{ padding:0px 20px; background:#ffffff; color:#999999; font-size:16px; width:250px; border:0; height:55px; line-height:55px; letter-spacing:1px; background:url(../images/com-search.png)10px -34px no-repeat; background-color:#FFFFFF ; padding-left:40px; border-right:1px #ddd solid}
+.index-search .input-4{ padding:0px 20px; background:#ffffff; color:#999999; font-size:16px; width:100px; border:0; height:55px; line-height:55px; letter-spacing:1px; background:url(../images/com-search.png)10px -78px no-repeat; background-color:#FFFFFF ; padding-left:40px; border-right:1px #ddd solid}
+.index-search .row{ display:block; width:16px; height:9px; position:absolute; right:430px; bottom:23px; background:url(../images/row.png) no-repeat;}
+.index-search .sel{padding:0px 20px; border:0; height:55px; line-height:55px; color:#999999; font-size:16px; width:120px;}
+.index-search .btn-search-1{ background:#fd8137; color:#ffffff; font-size:16px;height:55px; line-height:55px; letter-spacing:1px; width:120px; margin:0 ; border:0; cursor:pointer;}
+.index-search .btn-search:hover{ background:#ff9000}
+.message-a{ background:#3d97e3; color:#FFFFFF; text-decoration:none; padding:5px 20px;border-radius:3px}
+.message-a:hover{ background:#16aeff;}
+

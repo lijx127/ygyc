@@ -1,0 +1,64 @@
+
+
+
+
+
+img{border:0;}
+
+
+
+/* color */
+
+
+/* clearfix */
+
+.clearfix:after{ visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;}
+
+*html .clearfix{ zoom:1;}
+
+
+
+.preview{ float:left}
+
+/* smallImg */
+
+.smallImg{position:relative; height:62px; margin-top:1px; background-color:#F1F0F0; padding:6px 5px; width:; overflow:hidden; position:relative; height:60px; padding-left:10px}
+
+.scrollbutton{width:14px; height:50px; overflow:hidden; position:relative; float:left; cursor:pointer; }
+
+.scrollbutton.smallImgUp , .scrollbutton.smallImgUp.disabled{
+
+background:url(../images/d_09.png) no-repeat; z-index:999; float:left; position:absolute; right:10px; top:12px
+}
+.disabled{
+
+background:url(../images/d_09.png) no-repeat; z-index:999; float:left; position:absolute; right:10px; top:12px; opacity:0.3;
+}
+.scrollbutton.smallImgDown , .scrollbutton.smallImgDown.disabled{background:url(../images/d_08.png) no-repeat;position:absolute; left:10px; top:12px; z-index:999}
+
+
+
+#imageMenu { margin-top:-10px;}
+
+#imageMenu li {height:50px; width:60px; overflow:hidden; float:left; text-align:center; margin-bottom:10px}
+
+#imageMenu li img{width:50px; height:50px;cursor:pointer;}
+
+#imageMenu li#onlickImg img, #imageMenu li:hover img{ width:44px; height:44px; border:3px solid #959595;}
+
+/* bigImg */
+
+.bigImg{position:relative;overflow:hidden;width:540px; height:398px}
+.bigImg img{ width:540px; height:398px}
+
+.bigImg #midimg{}
+
+.bigImg #winSelector{width:100px; height:100px;}
+
+#winSelector{position:absolute; cursor:crosshair; filter:alpha(opacity=15); -moz-opacity:0.15; opacity:0.15; background-color:#000; border:1px solid #fff;}
+
+/* bigView */
+
+#bigView{position:absolute;border: 1px solid #959595; overflow: hidden; z-index:999; }
+
+#bigView img{position:absolute; }
