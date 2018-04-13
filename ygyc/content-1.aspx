@@ -2,24 +2,26 @@
 
 <%@ Register Src="~/ygyc/footer.ascx" TagPrefix="uc1" TagName="footer" %>
 <%@ Register Src="~/ygyc/header1.ascx" TagPrefix="uc1" TagName="header1" %>
-
+<%DTcms.Model.article model = ViewState["Model"] as DTcms.Model.article;%>
 
 
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>910教室-课程详细</title>
+    <title><%=model.title %> - 910教室</title>
+	<meta name="keywords" content="<%=model.title %>,910教室,910class,教师培训,教师培训平台,校长论坛,活动查询,会议查询,云谷云创">
+	<meta name="description" content="<%=model.zhaiyao%>">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-1.8.3.min.js"></script>
 
 </head>
 <body style="margin: 0; min-width: 1200px">
-    <form id="form1" runat="server">
-        <%DTcms.Model.article model = ViewState["Model"] as DTcms.Model.article;%>
+    <form id="form1">
+        
         <uc1:header1 runat="server" id="header1" />
         <div class="middle">
 <div class="location">当前位置 > <a href="http://www.910class.com/ygyc/index.aspx">首页</a> > <a href="http://www.910class.com/ygyc/product.aspx?channel=wangqi">往期回顾</a> > <%=model.title %></div> 
