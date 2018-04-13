@@ -17,10 +17,10 @@
     <meta name="description" content="教师培训，上910教室！910教室——专注教师培训课程展示的专业网络服务平台，整合全国优秀培训机构，给教育工作者展示优秀培训项目，为全国中小幼教师的专业发展提供开阔的视野及更多的选择，谋求在教师教育、未来教育、国际教育、学校服务等领域长足发展！">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/nivo-slider.css">
-
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
     <style type="text/css">
         /* float-news */
         .float-news {
