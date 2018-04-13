@@ -6,13 +6,15 @@
 <%@ Register Src="~/ygyc/PageControl.ascx" TagPrefix="uc1" TagName="PageControl" %>
 <%@ Register Src="~/ygyc/City.ascx" TagPrefix="uc1" TagName="City" %>
 
-
+<%DTcms.Model.article model = ViewState["Model"] as DTcms.Model.article;%>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>910教室-产品详细</title>
+<head>
+    <title><%=model.title %> - 910教室</title>
+	<meta name="keywords" content="<%=model.title %>,910教室,910class,教师培训,教师培训平台,校长论坛,活动查询,会议查询,云谷云创">
+	<meta name="description" content="<%=model.zhaiyao%>">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/pic.css">
@@ -114,9 +116,9 @@
     </script>
 </head>
 <body style="margin: 0; min-width: 1200px;font-family:'微软雅黑'">
-    <form id="form1" runat="server">
+    <form id="form1">
 
-        <%DTcms.Model.article model = ViewState["Model"] as DTcms.Model.article;%>
+        
         <uc1:header1 runat="server" ID="header1" />
         
         <div class="middle">
