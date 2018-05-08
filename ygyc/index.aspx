@@ -313,6 +313,12 @@ font-family:"微软雅黑"
 	
 			});
 		</script>
+    <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function() {
+          $("img").lazyload({effect: "fadeIn"});
+      });
+    </script>
 	
 </head>
 <body style="margin: 0; min-width: 1200px">
