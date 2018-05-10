@@ -33,31 +33,6 @@
                 $(".a2").css("background-color", "#007fd4");
                 $(".a2").css("color", "#ffffff");
             });
-            //QQ Login
-            function GetQueryString(name)
-            {
-                 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-                 var r = window.location.search.substr(1).match(reg);
-                 if(r!=null)return  unescape(r[2]); return null;
-            }
-             
-            // 调用方法
-            var code = GetQueryString("code");
-            if(code){
-                //QQ登录获取accessToken
-                //var nextURL = "https://graph.qq.com/oauth2.0/token?grant_type=authorization_code&client_id=101478148&client_secret=f9d15f1bc7556beaa6e36bbf9c87cbcb&code="+code+"&redirect_uri=http%3A%2F%2F910class.com%2Fygyc%2FLogin.aspx&state=123";
-                //window.location.href = nextURL;
-                $.ajax({url:"https://graph.qq.com/oauth2.0/token",async:false,
-                type:'JSONP',
-                data:{
-                    "grant_type":"authorization_code",
-                    "client_id":101478148,
-                    "client_secret":"f9d15f1bc7556beaa6e36bbf9c87cbcb",
-                    "code":code,
-                    "redirect_uri":"http%3A%2F%2F910class.com%2Fygyc%2FLogin.aspx",
-                    "state":123
-                }});
-            }
         });
     </script>
     <style>
@@ -98,6 +73,7 @@
                 <a class="weixin-a" href="#" style="float: left; padding-top: 10px">
                     <!--<img align="absmiddle" src="images/weixin.png">
                     微信账号直接登录--></a>
+                    <a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101478148&redirect_uri=http%3A%2F%2F910class.com%2Fygyc%2FLogin.aspx&state=123"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_7.png"></a>
             </div>
             <div class="clear div-login-2">
                 <h2>用户注册</h2>
